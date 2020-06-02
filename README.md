@@ -1,13 +1,13 @@
 # Native Apache Kudu binaries for .NET testing
 
+This is the .NET equivalent of the Java binary jar as described here, https://kudu.apache.org/2019/03/19/testing-apache-kudu-applications-on-the-jvm.html
+
 **Important:** This nuget package contains Kudu binaries for use in a "mini cluster" environment for **testing only**.
 
 The binaries in this archive should never be deployed to run an actual Kudu
 service, whether in production or development, because many security-related
 dependencies are copied from the build system and will not be patched when the
 operating system on the runtime host is patched.
-
-This is the .NET equivalent of the Java binary jar as described here, https://kudu.apache.org/2019/03/19/testing-apache-kudu-applications-on-the-jvm.html
 
 ## Usage
 
@@ -39,6 +39,6 @@ foreach (var env in kuduExe.EnvironmentVariables)
     startInfo.EnvironmentVariables.Add(env.Key, env.Value);
 }
 
-var process = new ProcessEx(startInfo);
+var process = new Process(startInfo);
 process.Start();
 ```
