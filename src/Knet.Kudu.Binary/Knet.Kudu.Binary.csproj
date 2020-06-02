@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <NoWarn>CS1591</NoWarn>
+
+    <PackageId>$(AssemblyName)</PackageId>
+    <Version>0.1.0-preview.1</Version>
+    <Authors>xqrzd</Authors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Description>Native Apache Kudu binary for testing</Description>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/xqrzd/kudu-binary-net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/xqrzd/kudu-binary-net</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\.nuget\icon.png" Pack="true" PackagePath="" Visible="false" />
+    <Content Include="runtimes\**" PackagePath="runtimes" Visible="false" />
+  </ItemGroup>
+
+</Project>

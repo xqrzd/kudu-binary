@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Knet.Kudu.Binary", "src\Knet.Kudu.Binary\Knet.Kudu.Binary.csproj", "{E522DC5D-6DAA-4A97-A587-37F112670E18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8BB323C7-55FF-40FA-B47E-3C29E8DB4114}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E522DC5D-6DAA-4A97-A587-37F112670E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E522DC5D-6DAA-4A97-A587-37F112670E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E522DC5D-6DAA-4A97-A587-37F112670E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E522DC5D-6DAA-4A97-A587-37F112670E18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E522DC5D-6DAA-4A97-A587-37F112670E18} = {8BB323C7-55FF-40FA-B47E-3C29E8DB4114}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC6B5B1D-E3DC-4394-B2AB-CBF974E7E2D0}
+	EndGlobalSection
+EndGlobal
