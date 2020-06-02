@@ -38,7 +38,7 @@ namespace Knet.Kudu.Binary
             var appPath = AppContext.BaseDirectory;
             var rid = GetRid();
 
-            var artifactRoot = Path.Combine(appPath, "runtimes", rid, "native");
+            var artifactRoot = Path.Combine(appPath, "runtimes", rid, "native", "kudu");
             var binPath = Path.Combine(artifactRoot, "bin");
             if (Directory.Exists(binPath))
             {
