@@ -11,7 +11,7 @@ operating system on the runtime host is patched.
 
 ## Usage
 
-Add the nuget package Knet.Kudu.Binary. This package will add the Apache Kudu binaries to your application's build output.
+Add the nuget package [Knet.Kudu.Binary](https://www.nuget.org/packages/Knet.Kudu.Binary). This package will add the Apache Kudu binaries to your application's build output.
 This library also comes with a helper method to locate an Apache Kudu binary, `KuduBinaryLocator.FindBinary("kudu")`.
 This also returns environment variables that should be set when starting the Kudu process:
 
