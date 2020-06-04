@@ -42,3 +42,9 @@ foreach (var env in kuduExe.EnvironmentVariables)
 var process = new Process(startInfo);
 process.Start();
 ```
+
+## Known Issues
+
+This package doesn't work properly with runtime aware projects, because the directory structure for native assets is lost
+(kudu exes in bin end up in the same directory as lib). This isn't expected to be an issue as this package is only for tests.
+If this is an issue, the kudu binaries can instead be embedded in the library and extracted at runtime (open an issue).
