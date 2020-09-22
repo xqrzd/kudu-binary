@@ -12,6 +12,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/xqrzd/kudu-binary-net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xqrzd/kudu-binary-net</RepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
