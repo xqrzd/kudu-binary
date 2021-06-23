@@ -5,7 +5,7 @@
     <NoWarn>CS1591</NoWarn>
 
     <PackageId>$(AssemblyName)</PackageId>
-    <Version>1.14.0</Version>
+    <Version>1.15.0</Version>
     <Authors>xqrzd</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Description>Native Apache Kudu binary for testing</Description>
