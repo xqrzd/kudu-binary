@@ -1,4 +1,4 @@
-﻿namespace Knet.Kudu.Binary
+namespace Knet.Kudu.Binary
 {
     /// <summary>
     /// Simple struct to provide various properties of a binary artifact to callers.
@@ -14,14 +14,14 @@
         /// Return the SASL module directory of an extracted artifact.
         /// May be null if unknown.
         /// </summary>
-        public string SaslDir { get; }
+        public string? SaslDir { get; }
 
         public KuduBinaryInfo(string binDir)
             : this(binDir, null)
         {
         }
 
-        public KuduBinaryInfo(string binDir, string saslDir)
+        public KuduBinaryInfo(string binDir, string? saslDir)
         {
             BinDir = binDir;
             SaslDir = saslDir;
