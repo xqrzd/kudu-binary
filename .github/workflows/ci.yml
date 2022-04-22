@@ -3,25 +3,24 @@ name: CI
 on: [push]
 
 env:
+  DOTNET_NOLOGO: 1
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
 jobs:
   linux_build:
-
     name: Linux build
     runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
+    - name: Setup dotnet
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '6.0.x'
     - name: Build
       run: dotnet build --configuration Release
 
   publish:
-
     name: Publish nuget package
     needs: linux_build
     runs-on: ubuntu-20.04
@@ -29,12 +28,12 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
+    - name: Setup dotnet
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x'
+        dotnet-version: '6.0.x'
     - name: Publish on version change
-      uses: rohith/publish-nuget@v2
+      uses: alirezanet/publish-nuget@v3.0.1
       with:
         PROJECT_FILE_PATH: src/Knet.Kudu.Binary/Knet.Kudu.Binary.csproj
         NUGET_KEY: ${{secrets.KUDU_NUGET_API_KEY}}

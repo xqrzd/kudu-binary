@@ -2,17 +2,25 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
     <NoWarn>CS1591</NoWarn>
 
     <PackageId>$(AssemblyName)</PackageId>
-    <Version>1.15.0</Version>
+    <Version>1.16.0</Version>
     <Authors>xqrzd</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Description>Native Apache Kudu binary for testing</Description>
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/xqrzd/kudu-binary-net</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/xqrzd/kudu-binary-net</RepositoryUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
   <ItemGroup>
